@@ -1,0 +1,27 @@
+{
+  "name": "jci_oau-main-page",
+  "version": "1.0.0",
+  "description": "Main Website Page for https://jcioau.org",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabbydamian/JCI_OAU-Main-Website.git"
+  },
+  "keywords": [
+    "JCI",
+    "OAU",
+    "Website"
+  ],
+  "author": "Developers Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabbydamian/JCI_OAU-Main-Website/issues"
+  },
+  "homepage": "https://github.com/Gabbydamian/JCI_OAU-Main-Website#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
