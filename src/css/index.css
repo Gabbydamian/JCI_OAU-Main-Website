@@ -3,7 +3,10 @@
 :root {
   --accent-blue: #189ef9;
   --main-blue: #152644;
-  --text-color: #ffffff;
+  --text-color: #45597c;
+  --mission-bg: #1d3257;
+  --creed-bg: #d9f0ff;
+  --white: #fff;
   --trans: all 0.3s ease-in-out;
 }
 
@@ -26,11 +29,27 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--white) !important;
 }
 
 img {
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--main-blue);
+}
+
+ul,
+li {
+  margin: none;
 }
 
 #hero_section {
@@ -39,6 +58,14 @@ img {
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+a.navbar-brand {
+  width: 210px;
+}
+
+nav.navbar {
+  padding: 42px 0 !important;
 }
 
 .navbar-nav {
@@ -66,11 +93,13 @@ img {
 .hero > h2 {
   font-weight: 300;
   font-size: 96px;
+  line-height: 92px;
   margin-top: 150px;
+  color: var(--white);
 }
 
 .hero-btn {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .hero-btn > a {
@@ -82,11 +111,119 @@ img {
   border-radius: 16px;
 }
 
-#about {
-  color: var(--main-blue);
-}
-
 #about > .row {
-  padding: 90px 0;
+  padding: 75px 0;
 }
 
+.about-header {
+  font-weight: 900;
+  font-size: 65px;
+  text-align: center;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 32px;
+}
+
+#mission_vision_creed {
+  font-size: 14px;
+}
+
+#mission_vision_creed-row {
+  margin: 42px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#vision {
+  background-color: var(--main-blue);
+  background-image: url('../images/mission.png');
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  box-shadow: -1.1641px 0.582051px 6.98461px -0.582051px rgba(21, 38, 68, 0.25);
+  border-radius: 12px;
+  padding: 34px 34px;
+  color: var(--white);
+}
+
+#mission {
+  background-color: var(--main-blue);
+  background-image: url('../images/mission.png');
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  box-shadow: -1.1641px 0.582051px 6.98461px -0.582051px rgba(21, 38, 68, 0.25);
+  border-radius: 12px;
+  padding: 34px 34px;
+  color: var(--white);
+}
+
+#creed {
+  background-color: var(--white);
+  background-image: url('../images/hand.png');
+  width: 100%;
+  height: 375px;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -1.1641px 0.582051px 6.98461px -0.582051px rgba(21, 38, 68, 0.25);
+  border-radius: 12px;
+  padding: 30px 40px;
+  font-size: 12px;
+}
+
+.creed-text,
+.mission-text,
+.vision-text {
+  font-weight: 600;
+}
+
+.vision-head,
+.mission-head {
+  color: var(--white);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.creed-head {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#lop {
+  padding: 64px 0;
+  background-color: #f3faff;
+}
+
+#lop > .container > .row {
+  align-items: center;
+}
+
+.message-head {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 109%;
+  letter-spacing: -0.035em;
+  text-transform: capitalize;
+  margin-bottom: 28px;
+}
+
+.lop-sign {
+  width: 430px;
+}
+
+.message-body {
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
